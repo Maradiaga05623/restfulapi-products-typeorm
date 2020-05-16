@@ -1,10 +1,10 @@
 {
     "type": "mssql",
-    "host": "20081002733.database.windows.net",
+    "host": "unahhg1992.database.windows.net",
     "port": 1433,
-    "username": "uayeb",
-    "password": "9;&QSerqRW\"2<ed\"",
-    "database": "ingresos",
+    "username": "hmaradiaga1992",
+    "password": "Maradiaga@1992",
+    "database": "ingreso_vehiculos",
     "options":{
       "synchronize": true,
       "logging": false,

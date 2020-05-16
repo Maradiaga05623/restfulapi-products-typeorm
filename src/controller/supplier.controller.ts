@@ -7,7 +7,7 @@ export class SupplierController{
         this.supplier_service = new SupplierService();
         this.routes();
     }
-    private routes(){
+    private routes(){//routas de los endpoints en postman
         
         this.app.route("/supplier/:id/summary")
         .get(this.supplier_service.getOneSummary);

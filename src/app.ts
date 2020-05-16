@@ -12,12 +12,16 @@ import {createConnection} from "typeorm";
 
 import {MainController} from "./controller/main.controller";
 import {SupplierController} from "./controller/supplier.controller";
+import {OrderDetailsController} from "./controller/OrderDetails.controller";
+import {ProductsController} from "./controller/Products.controller"
 
 class App{
 
     public app: Application;
     public main_controller: MainController;
     public supplier_controller: SupplierController;
+    public orderdetails_controller: OrderDetailsController;
+    public products_controller: ProductsController;
 
     constructor(){
         this.app = express();
@@ -25,6 +29,8 @@ class App{
         this.setDBConnection();
         this.main_controller = new MainController(this.app);
         this.supplier_controller = new SupplierController(this.app);
+        this.orderdetails_controller= new OrderDetailsController(this.app);
+        this.products_controller= new ProductsController(this.app);
     }
 
     private setConfig(){
